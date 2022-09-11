@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;    
+}
+html {
+    scroll-padding-top: 110px; /* height of sticky header */
+  }
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+}
+
+/* ****Barra de Navegacion**** */
+
+.menu-container{
+    display: flex;
+    background-color:#f54d0a;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu-logo img{
+    height: 70px;
+    width: auto;    
+    padding-left: 20px;
+}
+.menu-enlaces {
+    display: flex;
+    flex-direction: row;
+
+    
+
+    
+}
+.menu-enlaces li{
+    
+    
+}
+.menu-enlaces li a{
+    
+    padding: 28px 5px;
+    color: white;
+}
+.menu-enlaces li a:hover{
+    color: black;
+    background-color: white;
+} 
+
+.contenedor-nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+/* Contenido o Main */
+
+.contenido-especial{
+    display: block;
+    margin-top: 80px;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: center;
+}
+
+.contenido {
+    display: inline-block;
+    margin-top: 80px;    
+    /* margin-left: 120px;
+    margin-right: 120px; */
+    text-align: center;
+    flex-grow: 1;
+}
+
+.contenido ul li{
+    display: inline-block;
+    text-align: center;
+}
+
+.contenido p{
+    /* color: red; */
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+/* Contenido o Main Fin */
+.video-parent{
+    text-align: center;
+}
+.video-parent img{
+    height: 925px;
+}
+.espacio{
+    margin-top: 40px;
+}
+
+.imagen-circular{
+    margin-top: 40px;
+}
+.imagen-circular img{
+    
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 1px rgb(194, 186, 186);
+    
+    height: 300px;
+    width: 300px;
+
+    box-shadow: 4px 6px 15px #f54d0a;
+    
+}
+/* ********************** */
+.comunicate h2{
+    
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: white;
+}
+.lista-redes ul li{
+    display: inline;
+    text-align: center;
+    justify-content: space-around;
+    margin:0 6px;
+}
+
+
+.logo-redes{
+    display: flex;
+    
+}
+
+
+.gatto-foot img{
+    height: 250px;
+}
+
+.comunicate{
+    width: 100%;
+    /* width: 1030px; */
+    margin-top: 50px;
+    margin-left: -9%;
+}
+
+.top{
+    position: absolute;
+    right: 2rem;
+    /* top: 1800px; */
+    margin: 20px;
+    
+    
+}
+.top span{
+    color: black;
+    height: 80px;
+    font-size: 70px;
+    
+}
+.material-symbols-outlined:hover{
+    color: white;
+}
+/* .footer-todo {
+    
+    display: flex;
+    height: 260px;
+    
+} */
+.footer-todo h3{
+    
+    text-align: right;
+    background-color: aqua;
+}
+
+/* Footer de Prueba para que se quede abajo */
+
+.footer-todo{
+    display: flex;
+    height: 260px;
+            
+    
+}
+
+.footer-contenedor {
+    /* position: absolute; */
+    margin-top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #f54d0a;    
+    text-align: center;
+}
+
+
+
+/**************** index */
+    
+    /* Galeria */
+
+.galeria-index-container ul {
+    display: grid;    
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+
+}
+
+/**************** Remeras */
+    /* Galeria */
+.galeria-remeras-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(9,1fr);
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .contenido {
+        margin-top: 120px;
+    }
+    /* Navegacion */
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .menu-enlaces {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        justify-content: center;
+        
+        
+    }
+
+    /* ****** Remeras */
+    /* ****** Galeria */
+    .galeria-remeras-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(27, 1fr)
+    }
+
+
+    /* ****** Footer */
+    .footer-todo {
+        flex-direction: column;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .comunicate {
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+        
+    }
+    /* ****** Fin Footer */
+
+    .galeria-index-container ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .video-parent video {
+        width: 400px;
+    }
+    .video-parent img {
+        height: 534px;
+    }
+
+    .contenido-especial{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
